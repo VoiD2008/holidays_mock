@@ -11,6 +11,7 @@
     padding-bottom: 17px;
 }
 
+
 .logo,.header .description,.contactphone,.contactbutton {
     display: inline-block;
     vertical-align: middle;
@@ -23,6 +24,17 @@
     line-height: 24px;
     margin: 0;
 }
+
+
+.contactbutton {
+    padding: 20px 0px;
+}
+
+.container.footer {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
 .contactphone{
     padding:9px 0;
 }
@@ -510,4 +522,71 @@ margin-top:40px;
 	position:absolute;
 	right:0;
 	top: 30px;
+}
+
+
+
+
+footer{
+   background-color: #404245;
+   color:white;
+}
+
+footer .description,.contactphone,.contactbutton {
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 70px;
+    color:white;
+}
+
+footer .description, .contactphone {
+    font-family: dinprolight;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+}
+footer .logocontainer{
+        margin-top: 5%;
+}
+footer .logo{
+    margin-top:20px;
+}
+
+footer .description {
+    font-family: dinprolight;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 25px;
+}
+
+footer .mail-info{
+    margin-top:15px;
+    margin-bottom:30px;
+}
+
+footer .contactphone{
+    margin-top: 5%;
+    text-align: right;
+    padding-left: 30px;
+}
+
+footer .contactphone span{
+    font-size: 19px;
+    text-align: right;
+    
+}
+
+footer .contactbutton{
+    padding: 20px 0;
+}
+.socials{
+    text-align: center;
+}
+footer .socials{
+    margin-top:25%;
+    margin-bottom:25%;
+}
+footer .socials>a.btn-link{
+	padding:0;
 }
