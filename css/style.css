@@ -597,12 +597,16 @@ footer .socials>a.btn-link{
 .ya-maps{
 	position:relative;
 }
-.ya-maps .absolute-callback-form{
-    left: 25%;
+
+.ya-maps .absolute-callback-form {
+    left: 10%;
     position: absolute;
-    bottom: 25%;
+    bottom: 10%;
 }
 
+.rounded-btn{
+    border-radius: 15px;
+}
 .panel-heading.happy{
     padding: 0px;
     margin-top: 25px;
@@ -619,3 +623,4 @@ footer .socials>a.btn-link{
 .full-width{
     width:100%;
 }
+
