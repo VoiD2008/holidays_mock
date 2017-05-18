@@ -525,7 +525,10 @@ margin-top:40px;
 }
 
 
-
+section.ya-maps{
+    min-height: 700px;
+    background: rgba(147, 146, 146, 0.49);
+}
 
 footer{
    background-color: #404245;
