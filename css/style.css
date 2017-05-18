@@ -593,3 +593,29 @@ footer .socials{
 footer .socials>a.btn-link{
 	padding:0;
 }
+
+.ya-maps{
+	position:relative;
+}
+.ya-maps .absolute-callback-form{
+    left: 25%;
+    position: absolute;
+    bottom: 25%;
+}
+
+.panel-heading.happy{
+    padding: 0px;
+    margin-top: 25px;
+}
+.panel-heading.happy h2{
+    color:orange;
+    font-size:20px;
+    margin-bottom: 5px;
+}
+.panel-heading.happy span{
+    font-size: 15px;
+}
+
+.full-width{
+    width:100%;
+}
