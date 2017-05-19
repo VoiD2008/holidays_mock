@@ -640,6 +640,16 @@ footer .socials>a.btn-link{
 .coockies-h{
     font-weight:700;
 }
+
+section.our-team{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section.our-team .button-container{
+    margin-top:50px;
+}
+
 @media (max-width: 767px){
     .socials{
         margin-top:1em !important;
