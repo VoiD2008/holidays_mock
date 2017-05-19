@@ -650,6 +650,101 @@ section.our-team .button-container{
     margin-top:50px;
 }
 
+.thumbnail a:hover{
+    text-decoration: none;
+}
+
+.thumbnail.girl-icon:before{
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../images/icon-map.png);
+    background-repeat: no-repeat;
+    background-position-x: -340px;
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    background-color: #f9a81b;
+    left: 42px;
+    border-radius: 40px;
+}
+
+.thumbnail.man-icon:before{
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../images/icon-map.png);
+    background-repeat: no-repeat;
+    background-position-x: -397px;
+    width: 60px;
+    height: 60px;
+    top: -20px;
+    background-color: #f9a81b;
+    left: 42px;
+    border-radius: 40px;
+}
+.faq .item-text{
+    padding-left:30px;
+}
+.faq .list-group-item{
+    margin-bottom:15px;
+}
+.label-default.circled-number{
+    position: absolute;
+    left: -27px;
+    top: 25%;
+    display: inline;
+    font-size: 30px;
+    /* font-weight: lighter; */
+    font-weight: 100;
+    line-height: 1;
+    color: #f9a81b;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: .25em;
+    background-image: url(../images/skobki-circle.png);
+    background-position-y: -7px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.faq .list-group.bordered .list-group-item{
+    border-radius: 15px;
+    border: 1px solid #f9a81b;
+}
+
+
+
+/*.thumbnail.frames:after{
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../images/ramka.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    background-color: #f9a81b;
+    //left: 42px;
+    //border-radius: 40px;
+}*/
+.our-team .thumbnail img{
+    border-radius:15px;
+}
+
+section.coockies p{
+    font-size:19px;
+}
+span.orange-text{
+    color:#e95b2d;
+    font-weight: bold;
+}
+.coockies-h{
+
+}
+
 @media (max-width: 767px){
     .socials{
         margin-top:1em !important;
