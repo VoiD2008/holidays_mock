@@ -624,3 +624,29 @@ footer .socials>a.btn-link{
     width:100%;
 }
 
+.absolute-callback-form .button-container{
+    text-align: center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.absolute-callback-form a.button.orange{
+    margin:20px;
+}
+.absolute-callback-form label{
+    font-weight: normal;
+    color: grey;
+}
+.coockies-h{
+    font-weight:700;
+}
+@media (max-width: 767px){
+    .socials{
+        margin-top:1em !important;
+        margin-bottom:1em!important;
+    }
+    footer .contactphone, footer .contactbutton{
+        text-align: center;
+        padding-left:0;
+    }
+}
