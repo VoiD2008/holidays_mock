@@ -592,7 +592,17 @@ div.y-ico .content	:before{
 	top: 60px;
 }
 
-
+section.roadmap h2{
+    text-align: left;
+    font-family: PTSansBold;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.splash-one,.splash-two,.splash-three{
+    background-image: url(/images/splash.png);
+    width:100px;
+    height:100px;
+}
 section.ya-maps{
     min-height: 700px;
     background: rgba(147, 146, 146, 0.49);
@@ -690,6 +700,32 @@ footer .socials>a.btn-link{
 
 .full-width{
     width:100%;
+}
+
+.thumbnail.frames > a >img{
+    border-radius:20px;
+}
+.thumbnail.frames a:hover:after {
+    content: "Подробнее";
+    background-color: orangered;
+    opacity: .9;
+    position: absolute;
+    width: 80px;
+    top: 40%;
+    LEFT: 31%;
+    WIDTH: 120PX;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.thumbnail.frames:hover:after{
+    content:'';
+    background: white;
+    opacity: .9;
+    cursor:default;
 }
 
 .absolute-callback-form .button-container{
