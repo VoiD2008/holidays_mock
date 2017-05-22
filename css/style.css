@@ -105,7 +105,7 @@ a.button.button-selected:after,a.button:hover:after {
     transform-origin:left top;
 }
 
-.slide {
+.carousel-top.slide {
     overflow: hidden;
     height: 775px;
 }
@@ -190,6 +190,67 @@ svg.topclouds {
     transform: translateX(-50%);
     top: 0;
     bottom: 0;
+}
+.bottom-arrow-left:hover{
+    background-color: orangered !important; 
+}
+.bottom-arrow-right:hover{
+    background-color: orangered !important; 
+}
+.bottom-arrow-left{
+    background: white;
+    position: absolute;
+    height: 40px;
+    bottom: 0;
+    top: inherit;
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+    opacity: 1 !important;
+    width: 40px;
+    border-top-right-radius: 30px;
+}
+.bottom-arrow-left:after{
+    content:'';
+	position:absolute;	
+	display:block;
+	background-image:url(../images/l-arrow.png);
+	background-repeat:no-repeat;
+	width: 40px;
+    height: 40px;
+    top: 13px;
+    left: 13px;
+}
+.bottom-arrow-right{
+    background: white;
+    position: absolute;
+    height: 40px;
+    bottom: 0;
+    top: inherit;
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+    opacity: 1 !important;
+    width: 40px;
+    border-top-left-radius: 30px;
+}
+.bottom-arrow-right:after{
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../images/r-arrow.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    top: 13px;
+    left: 16px;
+}
+.carousel-indicators li{
+    background-color: white;
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: rgb(228, 152, 21);
 }
 
 .row.block0 h2{
@@ -475,14 +536,14 @@ div.y-ico .content	:before{
 
 .container-fluid.video2{
 	background:url(../images/video2-bg.jpg) top center;
-	height: 710px;
+	/* height: 710px; */
 	margin-bottom: 5px;
 	padding:30px inherit;
 
 }
 .container-fluid.video3{
 	background:url(../images/video3-bg.jpg) top center;
-	height: 710px;
+	/* height: 710px; */
 	margin-bottom: 5px;
 	position:relative;
 }
@@ -496,6 +557,11 @@ div.y-ico .content	:before{
     height: 80px;
     left:0;
     right:0;
+}
+
+.promo{
+    margin-top:15%;
+    margin-bottom:10%;
 }
 
 .promovideo{
@@ -514,14 +580,16 @@ div.y-ico .content	:before{
 	line-height:24px;
 	color:#fff;
 }
+
 .promo .button-container {
-margin-top:40px;
+    margin-top:40px;
+    margin-bottom:40px;
 }
 .promovideo svg {
 	width:80px;
 	position:absolute;
-	right:0;
-	top: 30px;
+	right:40px;
+	top: 60px;
 }
 
 
@@ -715,21 +783,13 @@ section.our-team .button-container{
     border: 1px solid #f9a81b;
 }
 
+.icon-cashback{
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 15px;
+    font-weight: bold;
+}
 
-
-/*.thumbnail.frames:after{
-    content: '';
-    position: absolute;
-    display: block;
-    background-image: url(../images/ramka.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    background-color: #f9a81b;
-    //left: 42px;
-    //border-radius: 40px;
-}*/
 .our-team .thumbnail img{
     border-radius:15px;
 }
@@ -737,12 +797,85 @@ section.our-team .button-container{
 section.coockies p{
     font-size:19px;
 }
-span.orange-text{
+.orange-text{
     color:#e95b2d;
     font-weight: bold;
 }
-.coockies-h{
+.percent-heading{
+    color: #e95b2d;
+    
+    font-size: 42px;
+}
+.heading-text{
+    display: inline-block;
+    font-size: 1em;
+}
+.vertical-middle .container{
+    padding-top:15%;
+    padding-bottom:15%;
+}
+.full-width{
+    width:100%;
+}
+.circles-bg{
+    background-image: url('/images/circles-bg.png');
+}
 
+.video3-ico .content{
+    padding: 10px 25px;
+    overflow: hidden;
+    background: url(../images/b-ellipsis.png) no-repeat #fff;
+    background-position: calc(100% + 65px) -65px;
+    transition: all .5s;
+    /* position: absolute; */
+    bottom: 0;
+    left: -10px;
+    width: 100%;
+}
+.video3-ico .content:before{
+    content: '';
+    position: absolute;
+    display: block;
+    background-image: url(../images/icon-map.png);
+    background-repeat: no-repeat;
+    background-position-x: -450px;
+    width: 60px;
+    height: 60px;
+    /* bottom: 75px; */
+    right: 21px; 
+}
+.video3-ico .content p{
+    padding:10px;
+}
+
+.white-panel{
+    background: white;
+    margin-top: 35px;
+    margin-bottom: 79px;
+    max-width: 500px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+@media screen and (max-width:765px){
+    .white-panel{
+        margin-left: 5px;
+        margin-right:5px;
+    }
+}
+.white-panel .header{
+    padding:25px;
+    
+}
+
+section.i-want > .container:after{
+        background: url(../images/bubbles.png) repeat-x bottom center;
+    content: '';
+    display: block;
+    position: relative;
+    bottom: 30px;
+    height: 80px;
+    left: 0;
+    right: 0;
 }
 
 @media (max-width: 767px){
